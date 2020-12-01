@@ -5,9 +5,13 @@ const pet = {
     weight: '20 lbs'
   };
 
+function copyPush2(pet) { 
+  pet.push( {color: 'gold'});
+}
 
 copyPush = { ...pet, color: 'gold'};
 module.export = {
-    copyPush
+  copyPush2,  
+  copyPush
 
 }
