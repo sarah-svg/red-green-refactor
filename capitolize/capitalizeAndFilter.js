@@ -1,6 +1,9 @@
 
 const word = ["hey", "how", "are", "you", "fred"];
 
+////////capitalizing and filtering through the results using loop and then map
+
+
 // const capitalizeAndFilter = (word) => {
 //     const wordCopy = [...word];
 //     let output = [];
@@ -21,5 +24,3 @@ const capitalizeAndFilter = (word) => {
   
   module.exports = { capitalizeAndFilter };
 
-
-console.log(capitalizeAndFilter(word));
