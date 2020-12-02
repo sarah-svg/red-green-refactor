@@ -1,17 +1,11 @@
+const { copyAndPush } = require("./copy-and-push");
 
-const request = require('superagent');
+describe("copyAndPush", () => {
+  it("given an array and a new item, returns the original array with adding a new number into the array", () => {
+    const array = [1, 2, 3];
+    const value = 4;
+    const numbers = copyAndPush(array, value);
 
-const { copyPush, copyPush2 } = require('./copy-and-push');
-
-
-describe('returns a new array with all the items and a new item', () => {
-    it('grabs the items plus a new item', () => {
-    expected = 
-      expect(copyPush2).toEqual(copyPush2)
-    });
-    it('grabs all the items in the array', () => {
-        expected = 
-          expect(copyPush).toEqual(copyPush)
-        });
-  
+    expect(numbers).toEqual([1, 2, 3, 4]);
   });
+});
