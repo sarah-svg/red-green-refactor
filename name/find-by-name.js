@@ -1,16 +1,18 @@
-const dogs = require('./name');
+const spot = { name: "spot", age: 5, weight: "20 lbs" };
 
-///finding one name out of the dogs array
 
-// const findByName = dogs[0]['name']
+const character = { _id: "5cf5679a915ecad153ab68c9", name: "Aang" };
 
-const findByName = dogs[0].name;
 
-const { name } = dogs[0];
+const findByName = (obj) => {
+  return obj["name"];
+};
+
+module.exports = { findByName };
 
 
 
 module.exports = {
      findByName,
-        name
+     
 }
