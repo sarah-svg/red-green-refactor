@@ -9,7 +9,7 @@ const fetchQuotes = async () => {
     );
 
     return response.body.slice(0, 1);
-    /////grabbing one of the quotes
+    /////grabbing one of the quotes and return it
 
   } catch (err) {
   
