@@ -8,4 +8,11 @@ describe("copyAndPush", () => {
 
     expect(numbers).toEqual([1, 2, 3, 4]);
   });
+  it("checks to see if original array is unchanged", () => {
+    const array = [1, 2, 3]
+    const numberArr = [1, 2, 3]
+    copyAndPush(numberArr, 4)
+    expect(numberArr).toEqual(array)
+  })
+
 });
