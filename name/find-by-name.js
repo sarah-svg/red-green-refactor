@@ -15,13 +15,16 @@ const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
 
 
 
-const findByName = (obj) => {
-  const { name } = obj;
+// const findByName = (obj) => {
+//   const { name } = obj;
+//   return name;
+// };
+
+
+const findByName = ({name }) => {
+  // const { name } = obj;
   return name;
 };
-
-
-
 
 
 
